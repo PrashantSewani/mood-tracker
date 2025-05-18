@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mood Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mood Tracker</h1>
+
+  <div class="mood-buttons" aria-label="Mood selection">
+    <button class="mood-button" data-mood="happy" title="Happy" aria-label="Happy mood">😀</button>
+    <button class="mood-button" data-mood="sad" title="Sad" aria-label="Sad mood">😢</button>
+    <button class="mood-button" data-mood="angry" title="Angry" aria-label="Angry mood">😠</button>
+    <button class="mood-button" data-mood="excited" title="Excited" aria-label="Excited mood">🤩</button>
+    <button class="mood-button" data-mood="neutral" title="Neutral" aria-label="Neutral mood">😐</button>
+  </div>
+
+  <div class="calendar" aria-label="Mood calendar">
+    <div class="calendar-header">
+      <button id="prev-month" aria-label="Previous month">&#8592;</button>
+      <div class="month-year" id="month-year"></div>
+      <button id="next-month" aria-label="Next month">&#8594;</button>
+    </div>
+    <div class="day-names">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+  
+  <button class="clear-button" aria-label="Clear all moods">Clear All Moods</button>
+
+  <footer>Made with ❤ — Your Mood Tracker</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
